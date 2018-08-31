@@ -1,0 +1,17 @@
+Sr.no,Scenario,Test Cases,Input,Expected Output
+1,Verification of users,1.Only Username is valid,1.user1,1.Ask for Password
+,,2.Both Username and Password are valid,2.user1 and pass1,2.Login is succesful
+,,3.Invalid username,3.user10,3.Ask again for username
+,,4.Invalid Password,4.pass10,4.Ask again for password
+,,5.Add Username and Password,5.user5 and pass5,5.Add to csv and game proceeds after validation
+,,,,
+2,CSV file updation,1.Login unsuccesful,1.user10 and pass10,1.CSV file is not updated
+,,2.Login Successful,2.user1 and pass1,2.CSV file is updated
+,,,,
+3,Game,1.Difficulty level ,"1.easy, medium or hard",1.Adjusts to the requested level
+,,2.Number out of bounds,2.Number to be guessed > maximum number,2.Ask user to enter again
+,,3.Player guesses it correctly,3.Number=guess,3.Congratulatory message
+,,3.Number of guesses,4.Any number,4.Ask user for no. of guesses
+,,4.Out of guesses,5.Exceeds the number of guesses asked ,5.End game with display of correct answer
+,,5.Player 1 enters the number to be guessed,6.Invisible number using getpass function,6.Do not display on screen
+,,6.Quit the game before it ends,7.CTRL + C,7.Quit the game
